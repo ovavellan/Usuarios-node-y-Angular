@@ -1,0 +1,48 @@
+<div class="container">
+  <div class="row">
+    <div class="col-12">
+      <div class="form-floating mt-5 mb-3">
+        <input type="text" class="form-control"
+        id="floatingInput" placeholder="Número de cedula" [(ngModel)]="cedula">
+        <label for="floatingInput">Cédula</label>
+      </div>
+      <button class="btn btn-primary" (click)
+      ="obtenerUsuarioPorCedula()">Buscar Usuario</button>
+      <div class="form-floating mt-5 mb-2">
+        <input type="text" readonly class="form-control-plaintext" id="floatingInputNombre"
+        [(ngModel)]="nombre">
+        <label for="floatingInputNombre">Nombre</label>
+      </div>
+
+      <div class="form-floating mb-2">
+        <input type="text" readonly class="form-control-plaintext" id="floatingInputApellido"
+        [(ngModel)]="apellido">
+        <label for="floatingInputApellido">Apellido</label>
+      </div>
+
+      <div class="form-floating mb-2">
+        <input type="text" readonly class="form-control-plaintext" id="floatingInputCedula"
+        [(ngModel)]="cedula">
+        <label for="floatingInputCedula">Cédula</label>
+      </div>
+
+      <div class="form-floating mb-2">
+        <input type="text" readonly class="form-control-plaintext" id="floatingInputTelefono"
+        [(ngModel)]="telefono">
+        <label for="floatingInputTelefono">Teléfono</label>
+      </div>
+
+      <div class="form-floating mb-2">
+        <input type="text" readonly class="form-control-plaintext" id="floatingInputDireccion"
+        [(ngModel)]="direccion">
+        <label for="floatingInputDireccion">Dirección</label>
+      </div>
+
+      <div class="form-floating mb-2">
+        <input type="text" readonly class="form-control-plaintext" id="floatingInputCorreo"
+        [(ngModel)]="correo">
+        <label for="floatingInputCorreo">Correo</label>
+      </div>
+    </div>
+  </div>
+</div>

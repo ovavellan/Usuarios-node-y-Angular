@@ -1,0 +1,44 @@
+<div class="container">
+    <div class="row">
+        <div class="col-6">
+            <div class="form-floating mb-3">
+                <input type="text" class="form-control" id="floatingInput" placeholder="Nombre Usuario"
+                    [(ngModel)]="nombre">
+                <label for="floatingInput">Nombre</label>
+            </div>
+
+            <div class="form-floating mb-3">
+                <input type="text" class="form-control" id="floatingInput" placeholder="Apellido Usuario"
+                    [(ngModel)]="apellido">
+                <label for="floatingInput">Apellido</label>
+            </div>
+
+            <div class="form-floating mb-3">
+                <input type="text" class="form-control" id="floatingInput" placeholder="Cedula Usuario"
+                    [(ngModel)]="cedula">
+                <label for="floatingInput">Cédula</label>
+            </div>
+
+            <div class="form-floating mb-3">
+                <input type="text" class="form-control" id="floatingInput" placeholder="Telefono Usuario"
+                    [(ngModel)]="telefono">
+                <label for="floatingInput">Teléfono</label>
+            </div>
+
+            <div class="form-floating mb-3">
+                <input type="text" class="form-control" id="floatingInput" placeholder="Direccion Usuario"
+                    [(ngModel)]="direccion">
+                <label for="floatingInput">Dirección</label>
+            </div>
+
+            <div class="form-floating mb-3">
+                <input type="text" class="form-control" id="floatingInput" placeholder="Correo Usuario"
+                    [(ngModel)]="correo">
+                <label for="floatingInput">Correo</label>
+            </div>
+          <button class="btn btn-primary me-2" (click)="eliminarUsuario()">Eliminar</button>
+          <button class="btn btn-primary" (click)="actualizarUsuario()">Actualizar</button>
+
+        </div>
+    </div>
+</div>
